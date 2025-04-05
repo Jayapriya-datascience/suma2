@@ -26,8 +26,8 @@ st.markdown(multi_color_blink_css, unsafe_allow_html=True)
 ##########################
 
 # Load Model and Scaler with Path Handling
-model_path = os.path.join("model7", "trained_model7.pkl")
-scaler_path = os.path.join("model7", "scaler7.pkl")
+model_path = os.path.join("modeljp15", "trained_modeljp2.pkl")
+scaler_path = os.path.join("modeljp15", "scalerjp2.pkl")
 
 if not os.path.exists(model_path):
     st.error(f"❌ Model file not found! Expected at: {model_path}")
@@ -42,7 +42,7 @@ with open(model_path, "rb") as model_file:
 
 import joblib  # Use joblib instead of pickle for loading scaler
 
-scaler_path = os.path.join("model7", "scaler7.pkl")
+scaler_path = os.path.join("modeljp2", "scalerjp2.pkl")
 
 try:
     scaler = joblib.load(scaler_path)  # Proper way to load the scaler
