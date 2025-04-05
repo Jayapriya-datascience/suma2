@@ -42,7 +42,7 @@ with open(model_path, "rb") as model_file:
 
 import joblib  # Use joblib instead of pickle for loading scaler
 
-scaler_path = os.path.join("modeljp", "scaler7.pkl")
+scaler_path = os.path.join("model7", "scaler7.pkl")
 
 try:
     scaler = joblib.load(scaler_path)  # Proper way to load the scaler
